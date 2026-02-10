@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Don Louis Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --obsidian: #030303;
+            --gold-light: #FBF5B7;
+            --gold-base: #BF953F;
+            --gold-dark: #8A6E2F;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--obsidian);
+            color: #ffffff;
+            -webkit-tap-highlight-color: transparent;
+            overscroll-behavior-y: none;
+            cursor: default;
+        }
+        
+        ::selection {
+            background: rgba(191, 149, 63, 0.2);
+            color: #fff;
+        }
+
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-arabic { font-family: 'Noto Sans Arabic', sans-serif; }
+        
+        ::-webkit-scrollbar { display: none; }
+        * { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Premium Glassmorphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        /* Metallic Text */
+        .text-gold-metallic {
+            background: linear-gradient(135deg, #FBF5B7 0%, #BF953F 40%, #AA771C 60%, #FBF5B7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 200%;
+            animation: shine 8s linear infinite;
+        }
+
+        @keyframes shine {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Subtle Noise Texture */
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        
+        .perspective-2000 {
+            perspective: 2000px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.3",
+    "html5-qrcode": "https://esm.sh/html5-qrcode",
+    "canvas-confetti": "https://cdn.skypack.dev/canvas-confetti"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

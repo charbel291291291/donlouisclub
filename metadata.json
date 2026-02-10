@@ -1,0 +1,7 @@
+{
+  "name": "Don Louis Club",
+  "description": "Premium Loyalty & Marketing PWA for Don Louis Lebanese Snack Bar. Members-only digital experience with 3D UI and exclusive rewards.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
